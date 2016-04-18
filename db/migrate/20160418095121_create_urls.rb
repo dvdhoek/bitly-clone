@@ -3,6 +3,7 @@ class CreateUrls < ActiveRecord::Migration
 		create_table :urls do |x|
 			x.string :long_url
 			x.string :short_url
+			x.integer :click_count, :default => 0
 		end
 	end
 end

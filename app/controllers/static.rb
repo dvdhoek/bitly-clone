@@ -22,6 +22,9 @@ end
 
 get '/:short_url' do
 	a = Url.find_by short_url: params[:short_url]
+	a.click_count = a.click_count + 1
+	byebug
+	a.save
 	link = a.long_url
 	
 	redirect link
