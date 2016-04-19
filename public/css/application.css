@@ -1,0 +1,143 @@
+h1 {
+    font-family: 'Sigmar One';
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    transition-duration: 2.0s;
+} 
+
+h1:hover {
+    font-size: 56px;
+    transition-duration: 2.0s;
+}
+
+h2 {
+    font-family: 'Sigmar One';
+    color: white;
+    text-align: center;
+    font-size: 32px;
+} 
+
+footer {
+    font-family: 'Sigmar One';
+    font-size: 18;
+    color: white;
+    width:100%;
+    height:30px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    text-align: center;
+    transition-duration: 2.0s;
+
+}
+
+footer:hover {
+    font-size: 24px;
+    transition-duration: 2.0s;
+    bottom:6;
+}
+
+input[type=text] {
+    font-family: 'Sigmar One';
+    color: #228B22;
+    font-style: bold;
+    background-color: white; /* Green */
+    height: 60px;
+    width: 900;
+    border: 2px solid #228B22;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 3.0s;
+    font-size: 20px ;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+input:hover {
+    border: 6px solid white;
+    background-color: #228B22;
+    transition-duration: 3.0s;
+    font-family: 'Sigmar One';
+    color: white;
+}
+.button {
+    font-family: 'Sigmar One';
+    background-color: #228B22; /* Green */
+    border: 2px solid white;
+    border-radius: 8px;
+    height: 45px;
+    width: 135px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 1.0s;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.48),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #87CEFA;
+    padding: 10px;
+}
+
+div {
+    font-family: 'Sigmar One';
+    color: #228B22; 
+    font-style: bold;
+    background-color: white;
+    height: 60px;
+    width: 900px;
+    border: 2px solid #228B22;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 1.0s;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+div:hover {
+    border: 6px solid #228B22;
+}
+
+body {
+    background-image: url("/img/WDF_795640.jpg");
+}
+
+.button:hover {
+    background-color: white;
+    color: #228B22;
+    transition-duration: 2.0s;
+}
+
+.button_contact {
+    font-family: 'Sigmar One';
+    background-color: #228B22; /* Green */
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 1.0s;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.48),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button_contact:hover {
+    background-color: white;
+    color: #228B22;
+    transition-duration: 2.0s;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);

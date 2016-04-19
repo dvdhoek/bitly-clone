@@ -1,8 +1,12 @@
-<h1>Hello World!!</h1>
-<p>See Me in views/static/index.html.erb</p>
 
-<form action = "/urls" method = "post">
-	Enter URL:
-	<input type ="text" name ="long_url">
-	<input type ="submit" name ="Submit">
-</form>
+<body>
+	<center>
+		<form type = "input" action = "/urls" method = "post">
+			<input type ="text" name ="long_url" placeholder = "Paste your long URL here" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Paste your long URL here'">
+			
+			<br><br>
+	
+			<input type ="submit" name ="submit_long_url" class = "button" >
+		</form>
+	</center>
+</body>

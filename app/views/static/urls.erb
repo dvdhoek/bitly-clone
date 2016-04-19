@@ -1,8 +1,20 @@
-<h1>Here is your short URL</h1>
+<center>
+<!-- 	<head> 
+		<h2>Here's your shortened link!</h2>
+	</head> -->
 
-<p>This is your short url: 
-<a href = "/<%= @url.short_url %>">
-localhost:9393/<%= @url.short_url %>
-</a>
-</p>
+<div>
+	<a href = "/<%= @url.short_url %>">
+		localhost:9393/<%= @url.short_url %>
+	</a>
+</div>
+
+<br><br>
+
+<form type = "input" action = "/back" method = "post">
+	<input type ="submit" name ="long_url" class = "button" value="NEXT">
+
+</center>
+
+
 
