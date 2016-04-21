@@ -1,11 +1,35 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>SHORT!</title>
+		<div class="navblock">
+		<div class="navbar">
+			<form action = "/" method = "get">
+				<input type ="submit" class = "buttonSmall" value="HOME">
+			</form>
+
+			<form action = "/stats" method = "get">
+				<input type ="submit" class = "buttonSmall" value="STATS">
+			</form>
+
+			<form action = "/about" method = "get">
+				<input type ="submit" class = "buttonSmall" value="ABOUT">
+			</form>
+
+			<form action = "/contact" method = "get">
+				<input type ="submit" class = "buttonSmall" value="CONTACT">			
+			</form>
+		</div>
+		</div>
+
 		<br><br><br><br>
 		<h1>SHORT!</h1>
 		<br><br><br><br>
 		<link rel="shortcut icon" href="http://www.clker.com/cliparts/8/d/1/8/12065644251491435347ericlemerdy_laptop_1.svg.med.png"> 
+
 		<link href="css/application.css" rel="stylesheet" type="text/css" >
+		<script   src="http://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/application.js"></script>
 	</head>
 	<body>
 		<%= yield %>

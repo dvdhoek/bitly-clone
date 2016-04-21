@@ -1,8 +1,7 @@
 require 'byebug'
-get '/' do
-  puts "[LOG] get /"
-  erb :"static/index"
 
+get '/' do
+  erb :"static/index"
 end
 
 post '/urls' do
@@ -11,6 +10,19 @@ post '/urls' do
 	@url = Url.new(long_url: long_url, short_url: short_url)
 	@url.save
 	redirect '/urls'
+end
+
+get '/stats' do 
+	@url = Url.all.order(:created_at)
+	erb :"static/stats"
+end
+
+get '/about' do 
+	erb :"static/about"
+end
+
+get '/contact' do 
+	erb :"static/contact"
 end
 
 get '/urls' do
@@ -29,6 +41,9 @@ end
 post '/back' do
 	redirect '/'
 end
+
+
+
 
 
 # a get request is the request to access the page at /... 

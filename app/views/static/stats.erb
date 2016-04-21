@@ -1,0 +1,20 @@
+<center> 
+	<table>
+		<table class="transparent">
+				<tr>
+				<th>Long URL</th>
+				<th>Short URL</th>
+				<th># of clicks</th>
+			</tr>
+		
+  			<tr>
+  			<% @url.each do |elem| %>
+	    		<td class='td_size'> <a href = "/<%= elem.long_url %>"><%= elem.long_url %> </a></td>
+	    		<td class='td_size'> <a href = "/<%= elem.short_url %>"><%= elem.short_url %> </a></td>
+	    		<td class='td_size'> <%= elem.click_count %> </td>
+  			</tr>
+		<% end %>
+	</table>
+</center>
+
+

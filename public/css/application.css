@@ -24,12 +24,14 @@ footer {
     color: white;
     width:100%;
     height:30px;
-    position:absolute;
+    position:fixed;
     bottom:0;
     left:0;
     text-align: center;
     transition-duration: 2.0s;
-
+    background-color: black;
+    line-height: 30px; 
+    vertical-align: middle;
 }
 
 footer:hover {
@@ -38,30 +40,6 @@ footer:hover {
     bottom:6;
 }
 
-input[type=text] {
-    font-family: 'Sigmar One';
-    color: #228B22;
-    font-style: bold;
-    background-color: white; /* Green */
-    height: 60px;
-    width: 900;
-    border: 2px solid #228B22;
-    border-radius: 8px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 3.0s;
-    font-size: 20px ;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 60px;
-}
-
-input:hover {
-    border: 6px solid white;
-    background-color: #228B22;
-    transition-duration: 3.0s;
-    font-family: 'Sigmar One';
-    color: white;
-}
 .button {
     font-family: 'Sigmar One';
     background-color: #228B22; /* Green */
@@ -77,8 +55,43 @@ input:hover {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 1.0s;
     box-shadow: 0 6px 8px 0 rgba(0,0,0,0.48),0 17px 50px 0 rgba(0,0,0,0.19);
+    vertical-align: middle;
+    line-height: 27px
 }
 
+.button:hover {
+    background-color: white;
+    color: #228B22;
+    transition-duration: 2.0s;
+}
+
+div.navbar > form {
+    display: inline-block;
+}
+.buttonSmall {
+    font-family: 'Sigmar One';
+    background-color: #228B22; /* Green */
+    border: 2px solid white;
+    border-radius: 8px;
+    height: 25px;
+    width: 80px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 1.0s;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.48),0 17px 50px 0 rgba(0,0,0,0.19);
+    vertical-align: middle;
+    line-height: 15px
+}
+
+.buttonSmall:hover {
+    background-color: white;
+    color: #228B22;
+    transition-duration: .5s;
+}
 .center {
     margin: auto;
     width: 60%;
@@ -86,7 +99,7 @@ input:hover {
     padding: 10px;
 }
 
-div {
+.mainbox {
     font-family: 'Sigmar One';
     color: #228B22; 
     font-style: bold;
@@ -101,9 +114,10 @@ div {
     text-align: center;
     vertical-align: middle;
     line-height: 60px;
+    margin-bottom: 20px;
 }
 
-div:hover {
+.mainbox:hover {
     border: 6px solid #228B22;
 }
 
@@ -111,33 +125,44 @@ body {
     background-image: url("/img/WDF_795640.jpg");
 }
 
-.button:hover {
-    background-color: white;
-    color: #228B22;
-    transition-duration: 2.0s;
-}
-
-.button_contact {
-    font-family: 'Sigmar One';
-    background-color: #228B22; /* Green */
-    border: none;
-    border-radius: 8px;
-    height: 30px;
-    width: 300px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 1.0s;
-    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.48),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.button_contact:hover {
-    background-color: white;
-    color: #228B22;
-    transition-duration: 2.0s;
-}
 
 @import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+
+.navbar {
+    padding-right: 140px;
+    float: right;
+    padding-top: 10px;
+    vertical-align: text-top;
+}
+
+.navblock {
+    background-color: rgba(183, 37, 37, 0.46);
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    position: fixed;
+}
+
+.td_size {    
+  width: 200px; 
+  height: 50px;
+  max-width: 400px;
+  min-width: 2px; 
+  max-height: 50px; 
+  min-height: 50px;
+  overflow: hidden;
+  text-align: center;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.transparent {
+  background:#7f7f7f;
+  background:rgba(255,255,255,0.5);
+  border: none;
+  border-radius: 8px;
+  border-radius:10px;
+  margin-bottom: 60px;
+}
