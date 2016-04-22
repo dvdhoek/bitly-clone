@@ -6,10 +6,20 @@ end
 
 post '/urls' do
 	long_url = params[:long_url]
-	short_url = Url.shorten
-	@url = Url.new(long_url: long_url, short_url: short_url)
-	@url.save
-	redirect '/urls'
+	# short_url = Url.shorten
+	@url = Url.new(long_url: long_url)
+	if @url.save
+		"<div class='mainbox'>
+			<a href = '/#{@url.short_url}''>
+				localhost:9393\/#{@url.short_url}
+			</a>
+		</div>"
+
+	else
+		"<div class='mainbox'>
+		<p>Error, please enter a correct URL</p>
+		</div>"
+	end
 end
 
 get '/stats' do 
@@ -25,9 +35,17 @@ get '/contact' do
 	erb :"static/contact"
 end
 
+post '/contact' do
+	"<p>#{params[:name]}</p>"
+end
+
 get '/urls' do
 	@url = Url.last
 	erb :"static/urls"
+end
+
+get '/error' do
+	erb :"static/error"
 end
 
 get '/:short_url' do
